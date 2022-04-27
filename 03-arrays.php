@@ -8,7 +8,7 @@
     <title>Arrays no PHP</title>
 </head>
 <body>
-    <h1>Usando arrays no PHP</h1>
+    <h1>Aprendendo arrays no PHP</h1>
     <hr>
 
     <h2>Array com índice numérico</h2>
