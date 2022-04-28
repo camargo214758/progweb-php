@@ -11,14 +11,22 @@
     <h1>condicionais</h1>
     <hr>
     <h2>Calculo</h2>
-    <?php
-    $salario = 500; 
+      <?php
+    $salario = 1800; 
 
     if( $salario < 500){
-       $rejuste = $salario*1.15;
+       $rejuste = $salario*9.15;
+       
+    } elseif( $salario <= 1000 ){
+        $reajuste = $salario*9.10; 
+
+    } else { $reajuste = $salario*1.09;
+        
     }
-    
+              
     ?>
+    <p> <?=$salario?> e <?=$reajuste?> </p>
+    
 
     
 </body>
