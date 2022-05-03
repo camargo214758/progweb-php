@@ -54,13 +54,42 @@
     
     <hr>
     <?php
-    $meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro",]
-       
+    $meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
     ?>
-    $i = 0
+    <ol>
+
+    <?php for($i = 0; $i < count($meses); $i++){ ?>
+        
+            <li> <?=$meses[$i]?> </li>
+    <?php } ?>
     
-    
-    
-    
+        </ol> 
+
+    <h2>foreach (para casa)</h2>
+    <p>loop exclusivo para Arrays</p>
+
+    <ol>
+        <?php foreach($meses as $mes){ ?>
+        <li> <?=$mes?> </li>
+        <?php } ?>
+
+    </ol>
+    <?php
+    // Array Associativo (Fornados por pares de chave=>valor)
+
+    $curso = [
+        // chave (key) => (value)
+        "nome" => "Programador Web",
+        "carga_horaria" => 240,
+        "unidade" => "Penha",
+        "ucs" => 5
+    ];
+
+    foreach($curso as $dados => $valor){ 
+    ?>
+    <p> <?=$dados?> - <?=$valor?> </p>
+    <?php
+}
+?>
 </body>
 </html>
